@@ -1,0 +1,123 @@
+/* EquipmentSection.module.css */
+.equipmentSection {
+    padding: 4rem 1rem;
+    background-color: #f8f9fa;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .header {
+    text-align: center;
+    margin-bottom: 3rem;
+  }
+  
+  .header h2 {
+    color: #0375aa;
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  .header p {
+    color: #666;
+    max-width: 800px;
+    margin: 0 auto;
+    line-height: 1.6;
+  }
+  
+  .equipmentGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+  }
+  
+  .equipmentCard {
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    border-top: 4px solid #0375aa;
+    /* height: 300px; */
+  }
+  
+  .equipmentCard:hover {
+    transform: translateY(-5px);
+  }
+  
+  .imageWrapper {
+    position: relative;
+    width: 100%;
+    /* padding-top: 75%; */
+  }
+  
+  .image {
+    object-fit: cover;
+  }
+  
+  .cardContent {
+    padding: 1.5rem;
+  }
+  
+  .cardContent h3 {
+    color: #0375aa;
+    margin: 0 0 1rem 0;
+    font-size: 1.25rem;
+  }
+  
+  .urgencyBadge {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    font-size: 0.875rem;
+    font-weight: 600;
+  }
+  
+  .high {
+    background-color: #ffebee;
+    color: #f8091d;
+  }
+  
+  .medium {
+    background-color: #fff3e0;
+    color: #ff9800;
+  }
+  
+  /* Media Queries */
+  @media (max-width: 1024px) {
+    .equipmentGrid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .header h2 {
+      font-size: 2rem;
+    }
+    
+    .equipmentGrid {
+      grid-template-columns: 1fr;
+    }
+    
+    .equipmentSection {
+      padding: 2rem 1rem;
+    }
+  }
+  
+  /* Animation */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .equipmentCard {
+    animation: fadeIn 0.5s ease-out forwards;
+  }

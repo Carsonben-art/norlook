@@ -1,0 +1,46 @@
+.purpose-section {
+    text-align: center;
+    padding: 2rem 1rem;
+    background-color: #ffffff;
+    border-radius: 8px;
+    margin: 2rem 0;
+  }
+  
+  .purpose-heading {
+    color: #e63946;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+  }
+  
+  .purpose-subheading {
+    color: #0698fa;
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+  }
+  
+  .purpose-description {
+    color: #444;
+    font-size: 1rem;
+    line-height: 1.6;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  /* Responsive Design */
+  @media screen and (max-width: 768px) {
+    .purpose-heading {
+      font-size: 1.8rem;
+    }
+  
+    .purpose-subheading {
+      font-size: 1.3rem;
+    }
+  
+    .purpose-description {
+      font-size: 0.95rem;
+      padding: 0 1rem;
+    }
+  }
+  

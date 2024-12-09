@@ -1,0 +1,131 @@
+/* TeamSection.module.css */
+.teamSection {
+    padding: 4rem 1rem;
+    background-color: #ffffff;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  
+  .badge {
+    display: inline-block;
+    background-color: #e3f2fd;
+    color: #0375aa;
+    padding: 0.5rem 1.5rem;
+    border-radius: 50px;
+    font-weight: 600;
+    font-size: 0.9rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .title {
+    color: #333;
+    font-size: 2.5rem;
+    margin-bottom: 3rem;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .teamGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+    justify-items: center;
+  }
+  
+  .teamCard {
+    width: 100%;
+    max-width: 300px;
+    text-align: center;
+    transition: transform 0.3s ease;
+  }
+  
+  .teamCard:hover {
+    transform: translateY(-5px);
+  }
+  
+  .imageWrapper {
+    width: 200px;
+    height: 200px;
+    margin: 0 auto 1.5rem;
+    position: relative;
+  }
+  
+  .memberImage {
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid #fff;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  }
+  
+  .memberInfo {
+    margin-top: 1rem;
+  }
+  
+  .roleBadge {
+    display: inline-block;
+    background-color: #e3f2fd;
+    color: #0375aa;
+    padding: 0.25rem 1rem;
+    border-radius: 50px;
+    font-size: 0.875rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .memberName {
+    color: #333;
+    font-size: 1.25rem;
+    margin: 0;
+  }
+  
+  /* Animation */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .teamCard {
+    animation: fadeIn 0.5s ease-out forwards;
+  }
+  
+  /* Media Queries */
+  @media (max-width: 1024px) {
+    .teamGrid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .title {
+      font-size: 2rem;
+    }
+  
+    .teamGrid {
+      grid-template-columns: 1fr;
+      gap: 3rem;
+    }
+  
+    .teamSection {
+      padding: 2rem 1rem;
+    }
+  }
+  
+  /* Hover Effects */
+  .teamCard:hover .memberImage {
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+  }
+  
+  .teamCard:hover .memberName {
+    color: #0375aa;
+  }

@@ -1,0 +1,96 @@
+.carouselSection {
+    padding: 2rem;
+    background-color: #f4f4f4;
+    color: #333;
+    max-width: 800px;
+    margin: 2rem auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  .title {
+    font-size: 2rem;
+    color: #0375aa;
+    margin-bottom: 1rem;
+  }
+  
+  .card {
+    background: #fff;
+    border-radius: 10px;
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+  
+  .imageWrapper {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 3px solid #0375aa;
+  }
+  
+  .name {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #0375aa;
+    margin: 0;
+  }
+  
+  .position {
+    font-size: 1rem;
+    color: #777;
+    margin-bottom: 0.5rem;
+  }
+  
+  .text {
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #555;
+  }
+  
+  .buttons {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 1rem;
+  }
+
+  .prevButton,
+  .nextButton {
+    background-color: #0375aa;
+    color: #fff;
+    border: none;
+    padding: 0.5rem 1rem;
+    font-size: 1.2rem;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    width: 50px;
+    height: 50px;
+  }
+  .prevButton{
+    background-color: #f8091d;
+  }
+  
+  /* Responsive design */
+  @media (min-width: 768px) {
+    .card {
+      flex-direction: row;
+      text-align: left;
+    }
+  
+    .imageWrapper {
+      width: 100px;
+      height: 100px;
+      margin-right: 1rem;
+    }
+  
+    .textContent {
+      flex: 1;
+    }
+  }
+  

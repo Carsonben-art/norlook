@@ -1,0 +1,70 @@
+.progressSection {
+    padding: 2rem;
+    background-color: #f4f4f4;
+    color: #333;
+  }
+  
+  .header {
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  
+  .header h2 {
+    font-size: 2rem;
+    color: #0375aa;
+    margin-bottom: 0.5rem;
+  }
+  
+  .header p {
+    font-size: 1.1rem;
+    color: #555;
+  }
+  
+  .content {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
+  }
+  
+  .imageWrapper {
+    width: 100%;
+    max-width: 800px;
+  }
+  
+  .textContent {
+    max-width: 800px;
+    text-align: center;
+  }
+  
+  .textContent h3 {
+    font-size: 1.5rem;
+    color: #0375aa;
+    margin-bottom: 1rem;
+  }
+  
+  .textContent p {
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 1rem;
+    color: #555;
+  }
+  
+  /* Responsive design */
+  @media (min-width: 768px) {
+    .content {
+      flex-direction: row;
+      align-items: flex-start;
+      gap: 3rem;
+    }
+  
+    .imageWrapper {
+      flex: 1;
+    }
+  
+    .textContent {
+      flex: 1;
+      text-align: left;
+    }
+  }
+  
