@@ -6,7 +6,7 @@ const teamMembers = [
   {
     id: 1,
     name: 'Mitema Silas',
-    role: 'Doctor',
+    role: 'Clinical Officer',
     image: '/mitema.jpeg',
   },
   {
@@ -28,7 +28,7 @@ const Team = () => {
   return (
     <section className={styles.teamSection}>
       <div className={styles.container}>
-        <div className={styles.badge}>Doctors</div>
+        <div className={styles.badge}>Team</div>
         
         <h2 className={styles.title}>
           Meet our expert medical team of dedicated specialists

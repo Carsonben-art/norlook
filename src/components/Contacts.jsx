@@ -24,7 +24,7 @@ const Contacts = () => {
             <FaEnvelope className={styles.icon} />
             <div>
               <h3>Email Us</h3>
-              <p>contact@norlookmedical.com</p>
+              <p>contact@norlookmedical.org</p>
             </div>
           </div>
 
