@@ -1,4 +1,4 @@
-
+import { SpeedInsights } from "@vercel/speed-insights/next"
 export const metadata = {
   title: "Norlook Medical Center",
   description: "Norlook Medical Center website.",
