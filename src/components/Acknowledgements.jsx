@@ -71,7 +71,6 @@ const Acknowledgments = () => {
             alt={acknowledgments[currentIndex].name}
             width={100}
             height={100}
-            layout="responsive"
             priority
           />
         </div>

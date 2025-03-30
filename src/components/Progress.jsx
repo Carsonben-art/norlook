@@ -33,7 +33,7 @@ const Progress = () => {
 
           <div className={styles.imageContainer}>
             <Image
-              src="/hospital.jpg" 
+              src="/norlookH.jpeg" 
               alt="Exterior construction progress"
               width={600}
               height={400}

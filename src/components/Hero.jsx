@@ -8,7 +8,7 @@ export default function Hero() {
         <h1>
           Compassionate Care <br />
           Close to Home – <br />
-          <span className="highlight">Norlook Medical Center</span>{" "}
+          <span className="highlight">Norlook Community Based Health Center</span>{" "}
           <span className="coming-soon">Coming Soon</span>
         </h1>
         <div className="statistics">
